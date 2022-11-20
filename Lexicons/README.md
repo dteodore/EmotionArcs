@@ -2,7 +2,7 @@ Lexicon files denote words and with their associated values for different emotio
 
 If you wish to use the following emotion lexicons, please download them from the [original source](http://saifmohammad.com/WebPages/lexicons.html).
 
-1. The valence, arousal, and dominance lexicon. 
+1. The valence, arousal, and dominance lexicon  
 
 The NRC [VAD](http://saifmohammad.com/WebPages/nrc-vad.html) lexicon. Please see the terms of use at the bottom of the linked page.
 Cite the following work if you use these lexicons:
