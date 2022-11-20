@@ -4,8 +4,8 @@ If you wish to use the following emotion lexicons, please download them from the
 
 1. The valence, arousal, and dominance lexicon  
 
- The NRC [VAD](http://saifmohammad.com/WebPages/nrc-vad.html) lexicon. Please see the terms of use at the bottom of the linked page.
- Cite the following work if you use these lexicons:
+  The NRC [VAD](http://saifmohammad.com/WebPages/nrc-vad.html) lexicon. Please see the terms of use at the bottom of the linked page.
+  Cite the following work if you use these lexicons:
  ```
  @inproceedings{vad-acl2018,
   title={Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words},
