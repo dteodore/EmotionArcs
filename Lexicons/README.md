@@ -43,4 +43,18 @@ If you wish to use the following emotion lexicons, please download them from the
     pages = "26--34",
 }
  ```
+ 
+3. Lexicon of words with real-valued scores of intensity for eight emotions (anger, fear, joy, sadness, and 4 more).\
+The NRC [Emotion Intensity (NRC-EIL)](http://saifmohammad.com/WebPages/AffectIntensity.htm) lexicon.\
+Please see the terms of use at the bottom of the linked page.\
+Cite the following work if you use these lexicons:\
+```
+@inproceedings{LREC18-AIL,
+    author = {Mohammad, Saif M.},
+    title = {Word Affect Intensities},
+    booktitle = {Proceedings of the 11th Edition of the Language Resources and Evaluation Conference (LREC-2018)},
+    year = {2018},
+    address={Miyazaki, Japan}
+}
+```
 **Note:** Please see the [terms of use](http://saifmohammad.com/WebPages/lexicons.html) for these lexicons.
