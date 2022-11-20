@@ -4,7 +4,7 @@ If you wish to use the following emotion lexicons, please download them from the
 
 1. The valence, arousal, and dominance lexicon\
   The NRC [VAD](http://saifmohammad.com/WebPages/nrc-vad.html) lexicon. Please see the terms of use at the bottom of the linked page.\
-  Cite the following work if you use these lexicons:\
+  Cite the following work if you use these lexicons:
  ```
  @inproceedings{vad-acl2018,
   title={Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words},
@@ -18,7 +18,7 @@ If you wish to use the following emotion lexicons, please download them from the
 2. Lexicon for 8 emotions (anger, fear, joy, sadness, and 4 more) and 2 sentiments (negative and positive).\
   The NRC [Word-Emotion Association Lexicon (EmoLex)](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) lexicon.\
   Please see the terms of use at the bottom of the linked page.\
-  Cite the following work if you use these lexicons:\
+  Cite the following work if you use these lexicons:
  ```
  @article{Mohammad13,
 	Author = {Mohammad, Saif M. and Turney, Peter D.},
@@ -47,7 +47,7 @@ If you wish to use the following emotion lexicons, please download them from the
 3. Lexicon of words with real-valued scores of intensity for eight emotions (anger, fear, joy, sadness, and 4 more).\
 The NRC [Emotion Intensity (NRC-EIL)](http://saifmohammad.com/WebPages/AffectIntensity.htm) lexicon.\
 Please see the terms of use at the bottom of the linked page.\
-Cite the following work if you use these lexicons:\
+Cite the following work if you use these lexicons:
 ```
 @inproceedings{LREC18-AIL,
     author = {Mohammad, Saif M.},
