@@ -15,7 +15,7 @@ If you wish to use the following emotion lexicons, please download them from the
   }
   ```
 
-2. Lexicon for 8 emotions (anger, fear, joy, sadness, and 4 more) and 2 sentiments (positive and negative).\
+2. Lexicon for 8 emotions (anger, fear, joy, sadness, and 4 more) and 2 sentiments (negative and positive).\
   The NRC [Word-Emotion Association Lexicon (EmoLex)](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) lexicon.\
   Please see the terms of use at the bottom of the linked page.\
   Cite the following work if you use these lexicons:\
