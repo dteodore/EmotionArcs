@@ -4,7 +4,7 @@ If you wish to use the following emotion lexicons, please download them from the
 
 1. The valence, arousal, and dominance lexicon\
   The NRC [VAD](http://saifmohammad.com/WebPages/nrc-vad.html) lexicon. Please see the terms of use at the bottom of the linked page.\
-  Cite the following work if you use these lexicons:
+  Cite the following work if you use these lexicons:\
  ```
  @inproceedings{vad-acl2018,
   title={Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words},
@@ -15,4 +15,32 @@ If you wish to use the following emotion lexicons, please download them from the
   }
   ```
 
+2. Lexicon for 8 emotions (anger, fear, joy, sadness, and 4 more) and 2 sentiments (positive and negative).\
+  The NRC [Word-Emotion Association Lexicon (EmoLex)](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) lexicon.\
+  Please see the terms of use at the bottom of the linked page.\
+  Cite the following work if you use these lexicons:\
+ ```
+ @article{Mohammad13,
+	Author = {Mohammad, Saif M. and Turney, Peter D.},
+	Journal = {Computational Intelligence},
+	Number = {3},
+	Pages = {436--465},
+	Title = {Crowdsourcing a Word-Emotion Association Lexicon},
+	Volume = {29},
+	Year = {2013}
+}
+
+@inproceedings{mohammad-turney-2010-emotions,
+    title = "Emotions Evoked by Common Words and Phrases: Using {M}echanical {T}urk to Create an Emotion Lexicon",
+    author = "Mohammad, Saif  and
+      Turney, Peter",
+    booktitle = "Proceedings of the {NAACL} {HLT} 2010 Workshop on Computational Approaches to Analysis and Generation of Emotion in Text",
+    month = jun,
+    year = "2010",
+    address = "Los Angeles, CA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W10-0204",
+    pages = "26--34",
+}
+ ```
 **Note:** Please see the [terms of use](http://saifmohammad.com/WebPages/lexicons.html) for these lexicons.
