@@ -4,7 +4,14 @@ Coming soon!
 
 If you use any of the resources provided in this repository, cite the following work:
 ```
-
+@misc{teodorescu2022frustratingly,
+      title={Frustratingly Easy Sentiment Analysis of Text Streams: Generating High-Quality Emotion Arcs Using Emotion Lexicons}, 
+      author={Daniela Teodorescu and Saif M. Mohammad},
+      year={2022},
+      eprint={2210.07381},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
 # What is in this repository?
