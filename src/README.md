@@ -1,7 +1,7 @@
 This code is based on the [Emotion Dynamics](https://github.com/Priya22/EmotionDynamics/tree/master) codebase by Krishnapriya Vishnubhotla.
 Slight modifications were made to allow for how to treat out-of-vocabulary (OOV) terms.
 
-* dataPath: path to file containing utterances. This file should contain the columns 'text'
+* dataPath: path to csv file containing utterances. This file should contain the columns 'text' with the utterances ordered temporarily 
 * lexPath: path to the lexicon file.
 * lexNames: name of the emotion category or dimension an emotion arc is being creeated for
 * savePath: path to the output folder
