@@ -18,7 +18,6 @@ parser.add_argument('--dataPath', help='path to CSV data file with texts')
 parser.add_argument('--lexPath', help='path to lexicon. CSV with columns "word" plus emotion columns')
 parser.add_argument('--lexNames', nargs="*", type=str, help='Names of the lexicons/column names in the lexicon CSV')
 parser.add_argument('--savePath', help='path to save folder')
-parser.add_argument('--method', help='How to calculate instance level score: average or proportion')
 parser.add_argument('--NA', help='Whether words not in lexicon get neutral scores: none or present')
 
 def read_lexicon(path, LEXNAMES):
@@ -64,8 +63,6 @@ def get_vals(twt, lexdf, NA):
                 word_labels.append((w, 'NA'))
     numTokens = len(at)
     numLexTokens = len(pw)
-    
-    f.write(str(word_labels) + "\n")
 
     sum_score = 0
     count = 0
@@ -125,8 +122,5 @@ if __name__=='__main__':
 
     savePath = args.savePath
 
-    method = args.method
     NA = args.NA
-    f = open('debugging.txt', 'w')
     main(dataPath, LEXICON, LEXNAMES, savePath, NA)
-    f.close()
