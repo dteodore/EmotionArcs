@@ -4,6 +4,6 @@ Slight modifications were made to allow for how to treat out-of-vocabulary (OOV)
 
 To run:
 ```
-python avgEmoValues.py --dataPath <dataPath to utterance> --lexPath <path to lexicon> --lexNames <emotion> --savePath <path to output folder > --NA <ignore OOV terms or assign neutral score>
+python avgEmoValues.py --dataPath <dataPath to utterances> --lexPath <path to lexicon file> --lexNames <emotion> --savePath <path to output folder > --NA <ignore OOV terms or assign neutral score [none,present]>
 
 ```
