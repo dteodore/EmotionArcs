@@ -28,6 +28,8 @@ If you use any of the resources provided in this repository, cite the following 
 - Code to evaluate generated emotion arcs compared to gold emotion arcs
 
 # Folders
+- Lexicons/: Information on where to obtain emotion lexicons used in our experiments
+- src/: scripts to compute instance-level emotion scores for a temporally ordered stream of utterances, and to evaluate generated emotion arcs to manual annotations
 
 # Ethical Considerations
 
