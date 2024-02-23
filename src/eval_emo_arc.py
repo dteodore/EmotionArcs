@@ -144,8 +144,6 @@ def writeBinScores(dataset_name, dataset_type, lang, emotion, lexicon_type, na_p
     return
 
 if __name__=="__main__":
-    rootdir = ""
-    
     output_filename_data = "bin_scores.txt"
     f = open(output_filename_data, "w")
     f.write("Test Data,Test Data Type,Lang,Emotion,Lexicon Scores,N/As,OOV,Bin,Manual Bin Score,Automatic Bin Score"+ "\n")
