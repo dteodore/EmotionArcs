@@ -1,3 +1,4 @@
+from argparse import ArgumentParser
 from scipy.stats import spearmanr
 import csv
 from collections import OrderedDict
@@ -144,6 +145,8 @@ def writeBinScores(dataset_name, dataset_type, lang, emotion, lexicon_type, na_p
     return
 
 if __name__=="__main__":
+    args = parser.parse_args()
+    
     output_filename_data = "bin_scores.txt"
     f = open(output_filename_data, "w")
     f.write("Test Data,Test Data Type,Lang,Emotion,Lexicon Scores,N/As,OOV,Bin,Manual Bin Score,Automatic Bin Score"+ "\n")
@@ -156,8 +159,8 @@ if __name__=="__main__":
     # V-reg
     emotions = ["Valence"]
     lexicon_type = "real-valued"
-    automatic_output_dir = ""
-    manual_annotation_filename = ""
+    automatic_output_dir = args.automatic_dataPath
+    manual_annotation_filename = args.manual_dataPath
     bin_sizes = [1,10,50,100,200,300]
     na_present = "none"
     na_score = "assigned neutral score"
