@@ -10,7 +10,7 @@ class FindCorrelation:
         self.manual_filename = manual_filename
         self.automatic_filename = automatic_filename
         self.aut_tweet_score = self.extractAutomatic(self.automatic_filename)
-        self.fc.man_tweet_score = self.extractManual(self.manual_filename)
+        self.man_tweet_score = self.extractManual(self.manual_filename)
         return 
 
     def extractManual(self, filename):
