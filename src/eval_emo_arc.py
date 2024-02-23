@@ -145,6 +145,10 @@ def writeBinScores(dataset_name, dataset_type, lang, emotion, lexicon_type, na_p
     return
 
 if __name__=="__main__":
+    parser = ArgumentParser()
+    parser.add_argument('--automatic_dataPath', help='path to emotion labelled instances using lexicon approach')
+    parser.add_argument('--manual_dataPath', help='path to manually annotated emotion labelled instances')
+
     args = parser.parse_args()
     
     output_filename_data = "bin_scores.txt"
