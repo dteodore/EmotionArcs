@@ -36,3 +36,5 @@ If you use any of the resources provided in this repository, cite the following 
 
 # Authors
 If you have any questions please contact the authors:
+
+Daniela Teodorescu, dteodore@ualberta.ca
