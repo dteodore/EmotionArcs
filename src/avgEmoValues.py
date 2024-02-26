@@ -41,8 +41,10 @@ def get_alpha(token):
 
 
 def get_vals(twt, lexdf, NA):
-    twt = " ".join(twokenize.tokenizeRawTweetText(twt))
-    tt = twt.lower().split(" ")
+    twt_s = twokenize.tokenizeRawTweetText(twt)
+    twt_new = " ".join(twt_s)
+    twt_new = twt_new.translate(str.maketrans('', '', string.punctuation))
+    tt = twt_new.lower().split(" ")
 
     at = []
     pw = []
