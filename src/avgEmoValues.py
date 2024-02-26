@@ -10,7 +10,7 @@ from tqdm import tqdm
 import pickle as pkl
 from argparse import ArgumentParser
 import logging
-from clean_data import tokenize_tweet
+from twTokenizer import twokenize
 tqdm.pandas()
 
 parser = ArgumentParser()
@@ -41,7 +41,7 @@ def get_alpha(token):
 
 
 def get_vals(twt, lexdf, NA):
-    twt = tokenize_tweet(twt)
+    twt = " ".join(twokenize.tokenizeRawTweetText(twt))
     tt = twt.lower().split(" ")
 
     at = []
