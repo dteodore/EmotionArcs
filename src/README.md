@@ -1,4 +1,4 @@
-There are two files here:
+There are two files in ```src```:
 * avgEmoValues.py -- computes emotion scores per instance
 * eval_emo_arc.py -- evaluates the predicted arc by calculating the spearman correlation between the predicted arc and the manually annotated arc
 
