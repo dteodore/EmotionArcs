@@ -19,7 +19,10 @@ The python package [Twokenize](https://github.com/myleott/ark-twokenize-py) is u
 python avgEmoValues.py --dataPath <path to utterances> --lexPath <path to lexicon file> --lexNames <emotion> --savePath <path to output folder> --NA <ignore OOV terms or assign neutral score [none,present]>
 ```
 
-To eval_emo_arc.py:
+To run eval_emo_arc.py, two arguments are required:
+* manual_dataPath: path to the file with the utterances manually annotated for emotion
+* automatic_dataPath: path to the file with emotion scores derived from automatic approaches such as the lexicon-based approach
+  
 ```
 python eval_emo_arc.py --manual_dataPath <path to manually annotated utterances> --automatic_dataPath <path to automatically annotated output>
 ```
