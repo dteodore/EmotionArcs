@@ -8,7 +8,7 @@ Slight modifications were made to allow for how to treat out-of-vocabulary (OOV)
 To run avgEmoValues.py it requires the following arguments:
 
 * dataPath: path to csv file containing utterances. This file should contain the columns 'text' with the utterances ordered temporarily 
-* lexPath: path to the lexicon file. This file should contain two columns: ```word,emotion_score```
+* lexPath: path to the lexicon file. This file should contain two columns: ```word,emotion_score``` with the header ```word,valence``` as an example for the emotion dimension valence.
 * lexNames: name of the emotion category or dimension an emotion arc is being created for
 * savePath: path to the output folder
 * NA: how to treat OOV words. Choices are to either ignore OOV terms (present) or to include them and assign a neutral score (none)
