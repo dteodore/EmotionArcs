@@ -2,7 +2,7 @@ There are two files in ```src```:
 * avgEmoValues.py -- computes emotion scores per instance
 * eval_emo_arc.py -- evaluates the predicted arc by calculating the spearman correlation between the predicted arc and the manually annotated arc
 
-The avgEmoValues.py script is based on the [Emotion Dynamics](https://github.com/Priya22/EmotionDynamics/tree/master) codebase by Krishnapriya Vishnubhotla.
+The ```avgEmoValues.py``` script is based on the [Emotion Dynamics](https://github.com/Priya22/EmotionDynamics/tree/master) codebase by Krishnapriya Vishnubhotla.
 Slight modifications were made to allow for how to treat out-of-vocabulary (OOV) terms.
 
 To run avgEmoValues.py it requires the following arguments:
