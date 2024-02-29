@@ -19,6 +19,7 @@ parser.add_argument('--lexPath', help='path to lexicon. CSV with columns "word" 
 parser.add_argument('--lexNames', nargs="*", type=str, help='Names of the lexicons/column names in the lexicon CSV')
 parser.add_argument('--savePath', help='path to save folder')
 parser.add_argument('--NA', help='Whether words not in lexicon get neutral scores: none or present')
+parser.add_argument('--neutralScore', help='what score to assign neutral terms', default=0)
 
 def read_lexicon(path, LEXNAMES):
     df = pd.read_csv(path, quotechar="'")
@@ -40,7 +41,7 @@ def get_alpha(token):
     return token.isalpha()
 
 
-def get_vals(twt, lexdf, NA):
+def get_vals(twt, lexdf, NA, neutralScore):
     twt_s = twokenize.tokenizeRawTweetText(twt)
     twt_new = " ".join(twt_s)
     twt_new = twt_new.translate(str.maketrans('', '', string.punctuation))
@@ -60,7 +61,7 @@ def get_vals(twt, lexdf, NA):
             word_labels.append((w, float(score)))
         else: # Word is not in lexicon     
             if NA == 'none': # use neutral score
-                word_labels.append((w, 0))
+                word_labels.append((w, neutralScore))
             elif NA == 'present': # use NA
                 word_labels.append((w, 'NA'))
     numTokens = len(at)
@@ -80,10 +81,10 @@ def get_vals(twt, lexdf, NA):
     return [numTokens, numLexTokens, avgLexVal]
 
 
-def process_df(df, lexdf, NA):
+def process_df(df, lexdf, NA, neutralScore):
     logging.info("Number of rows: " + str(len(df)))
 
-    resrows = [get_vals(x, lexdf, NA) for x in df['text']]
+    resrows = [get_vals(x, lexdf, NA, neutralScore) for x in df['text']]
     resrows = [x + y for x,y in zip(df.values.tolist(), resrows)]
 
     resdf = pd.DataFrame(resrows, columns=df.columns.tolist() + ['numTokens', 'numLexTokens', 'avgLexVal'])
@@ -93,7 +94,7 @@ def process_df(df, lexdf, NA):
    
     return resdf
 
-def main(dataPath, LEXICON, LEXNAMES, savePath, NA):
+def main(dataPath, LEXICON, LEXNAMES, savePath, NA, neutralScore):
 
     os.makedirs(savePath, exist_ok=True)
 
@@ -109,7 +110,7 @@ def main(dataPath, LEXICON, LEXNAMES, savePath, NA):
 
         lexdf = prep_dim_lexicon(LEXICON, LEXNAME)
         logging.info(LEXNAME + " lexicon length: " + str(len(lexdf)))
-        resdf = process_df(df, lexdf, NA)
+        resdf = process_df(df, lexdf, NA, neutralScore)
     
         resdf.to_csv(os.path.join(savePath, LEXNAME+'.csv'), index=False)
 
@@ -123,6 +124,7 @@ if __name__=='__main__':
     LEXICON = read_lexicon(lexPath, LEXNAMES)
 
     savePath = args.savePath
-
     NA = args.NA
-    main(dataPath, LEXICON, LEXNAMES, savePath, NA)
+    neutralScore = float(args.neutralScore)
+    
+    main(dataPath, LEXICON, LEXNAMES, savePath, NA, neutralScore)
