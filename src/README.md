@@ -15,7 +15,7 @@ To run ```avgEmoValues.py``` it requires the following arguments:
 The python package [Twokenize](https://github.com/myleott/ark-twokenize-py) is used to help preprocess the text. This repository should be cloned in the folder where you are running the script.
 
 ```
-python avgEmoValues.py --dataPath <path to utterances> --lexPath <path to lexicon file> --lexNames <emotion> --savePath <path to output folder> --NA <ignore OOV terms or assign neutral score [none,present]>
+python avgEmoValues.py --dataPath <path to utterances> --lexPath <path to lexicon file> --lexNames <emotion> --savePath <path to output folder> --NA <ignore OOV terms or assign neutral score [none,present]> --neutralScore <float, default is 0>
 ```
 
 To run eval_emo_arc.py, two arguments are required:
