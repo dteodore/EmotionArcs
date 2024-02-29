@@ -29,7 +29,7 @@ If you use any of the resources provided in this repository, cite the following 
 
 # Folders
 - ```Lexicons/```: Information on where to obtain emotion lexicons used in our experiments
-- ```src/```: scripts to compute instance-level emotion scores for a temporally ordered stream of utterances, and to evaluate generated emotion arcs to manual annotations
+- ```src/```: scripts to compute instance-level emotion scores for a temporally ordered stream of utterances, and to evaluate the generated emotion arc compared to the arc created from manual annotations
 
 # Ethical Considerations
 
