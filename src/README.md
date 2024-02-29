@@ -10,7 +10,7 @@ To run ```avgEmoValues.py``` it requires the following arguments:
 * lexPath: path to the lexicon file. This file should contain two columns: ```word,emotion_score``` with the header ```word,valence``` as an example for the emotion dimension _valence_.
 * lexNames: name of the emotion category or dimension an emotion arc is being created for e.g., valence
 * savePath: path to the output folder
-* NA: how to treat OOV words. Choices are to either ignore OOV terms by replacing them with 'NA' (NAs are present) or to include OOV terms and assign a neutral score (none for no NA terms)
+* NA: how to treat OOV words. Choices are to either ignore OOV terms by replacing them with 'NA' (NAs are present) or to include OOV terms and assign a neutral score (none for no NA terms). Note, that depending on the emotion you are analzying and the lexicon's scale range, a neutral score may mean different things. For example, when using a lexicon ranging from -1 to 1 for valence, 0 is a neutral score.
 
 The python package [Twokenize](https://github.com/myleott/ark-twokenize-py) is used to help preprocess the text. This repository should be cloned in the folder where you are running the script.
 
