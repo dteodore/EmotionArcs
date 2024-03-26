@@ -47,8 +47,8 @@ def get_vals(twt, lexdf, NA, neutralScore):
     twt_new = twt_new.translate(str.maketrans('', '', string.punctuation))
     tt = twt_new.lower().split(" ")
 
-    if len(tt) == 1 and tt[0] == "":
-        return [0,0,neutralScore]
+    # if len(tt) == 1 and tt[0] == "":
+    #     return [0,0,neutralScore]
     
     at = []
     pw = []
